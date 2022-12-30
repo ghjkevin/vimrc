@@ -191,7 +191,9 @@ set shiftwidth=4                                      "换行时自动缩进宽�
 set smarttab                                          "指定按一次backspace就删除shiftwidth宽度
 "set foldenable                                        "启用折叠
 set foldmethod=indent                                 "indent 折叠方式
+"set foldmethod=syntax                                 "syntax 折叠方式
 " set foldmethod=marker                                "marker 折叠方式
+set foldlevelstart=99
 
 " 常规模式下用空格键来开关光标行所在折叠（注：zR 展开所有折叠，zM 关闭所有折叠）
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
@@ -222,7 +224,7 @@ imap <c-j> <Down>
 imap <c-l> <Right>
 
 " 启用每行超过80列的字符提示（字体变蓝并加下划线），不启用就注释掉
-au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
+"au BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
 
 " -----------------------------------------------------------------------------
 "  < 界面配置 >
@@ -234,7 +236,8 @@ set cmdheight=2                                       "设置命令行的高度�
 set cursorline                                        "突出显示当前行
 "set guifont=YaHei_Consolas_Hybrid:h13                 "设置字体:字号（字体名称空格用下划线代替）
 set guifont=Courier_New:h13:cANSI
-set nowrap                                            "设置不自动换行
+"set nowrap                                            "设置不自动换行
+set wrap
 set shortmess=atI                                     "去掉欢迎界面
 
 " 设置 gVim 窗口初始位置及大小
