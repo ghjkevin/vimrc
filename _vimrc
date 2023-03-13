@@ -292,7 +292,7 @@ let g:vim_markdown_frontmatter=1
 if g:isGUI
     set guioptions-=m
     set guioptions-=T
-    set guioptions-=r
+    set guioptions+=r
     set guioptions-=L
     nmap <silent> <c-F11> :if &guioptions =~# 'm' <Bar>
         \set guioptions-=m <Bar>
