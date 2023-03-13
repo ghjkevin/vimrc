@@ -135,6 +135,8 @@ endif
 Bundle 'ghjkevin/vundle'
 
 " 以下为要安装或更新的插件，不同仓库都有（具体书写规范请参考帮助）
+" Bundle 'a.vim':https://github.com/vim-scripts/a.vim
+" Bundle 'ghjkevin/auto-pairs':https://github.com/ghjkevin/auto-pairs
 Bundle 'a.vim'
 Bundle 'Align'
 Bundle 'ghjkevin/auto-pairs'
@@ -142,13 +144,13 @@ Bundle 'bufexplorer.zip'
 Bundle 'ccvext.vim'
 Bundle 'cSyntaxAfter'
 Bundle 'ghjkevin/ctrlp.vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'Yggdroot/indentLine'
+Bundle 'ghjkevin/emmet-vim'
+Bundle 'ghjkevin/indentLine'
 Bundle 'vim-javacompleteex'
 Bundle 'Mark--Karkat'
 "Bundle 'Shougo/neocomplcache.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
+Bundle 'ghjkevin/nerdcommenter'
+Bundle 'ghjkevin/nerdtree'
 Bundle 'OmniCppComplete'
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'repeat.vim'
