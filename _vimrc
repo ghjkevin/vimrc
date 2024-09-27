@@ -215,6 +215,17 @@ if has("syntax")
     syntax on
 endif
 
+:nn <M-1> 1gt
+:nn <M-2> 2gt
+:nn <M-3> 3gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+:nn <M-1> 1gt
+
 " 常规模式下用空格键来开关光标行所在折叠（注：zR 展开所有折叠，zM 关闭所有折叠）
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
