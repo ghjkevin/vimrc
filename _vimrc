@@ -915,7 +915,10 @@ au BufRead,BufNewFile *.txt setlocal ft=txt
 " 用Cscope自己的话说 - "你可以把它当做是超过频的ctags"
 if has("cscope")
     "设定可以使用 quickfix 窗口来查看 cscope 结果
-    set cscopequickfix=s-,c-,d-,i-,t-,e-
+    " set cscopequickfix=s-,c-,d-,i-,t-,e-
+    set cscopequickfix=s-,d-,i-,t-,e-
+    "nmap <C-n> :cnext<CR>
+    "nmap <C-p> :cprev<CR>
     "使支持用 Ctrl+]  和 Ctrl+t 快捷键在代码间跳转
     set cscopetag
     "如果你想反向搜索顺序设置为1
