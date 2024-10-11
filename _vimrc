@@ -218,13 +218,14 @@ endif
 :nn <M-1> 1gt
 :nn <M-2> 2gt
 :nn <M-3> 3gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
-:nn <M-1> 1gt
+:nn <M-4> 4gt
+:nn <M-5> 5gt
+:nn <M-6> 6gt
+:nn <M-7> 7gt
+:nn <M-8> 8gt
+:nn <M-9> 9gt
+:nn <M-0> :tablast<CR>
+:nn <M-`> :tabnew<CR>
 
 " 常规模式下用空格键来开关光标行所在折叠（注：zR 展开所有折叠，zM 关闭所有折叠）
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
