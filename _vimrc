@@ -842,11 +842,20 @@ let g:SrcExpl_winHeight = 20
 " // Do not let the Source Explorer update the tags file when opening 
 let g:SrcExpl_isUpdateTags = 0
 " // Set "<F12>" key for updating the tags file artificially 
-let g:SrcExpl_updateTagsKey = "<F12>" 
+" let g:SrcExpl_updateTagsKey = "<F12>" 
 " // Set "<F3>" key for displaying the previous definition in the jump list 
 let g:SrcExpl_prevDefKey = "<F3>" 
 " // Set "<F4>" key for displaying the next definition in the jump list 
 let g:SrcExpl_nextDefKey = "<F4>" 
+" // Set "Enter" key to jump into the exact definition context
+" let g:SrcExpl_jumpKey = "<ENTER>"
+" // Set "Space" Key for back from the definition context
+" let g:SrcExpl_gobackKey = "<SPACE>"
+let g:SrcExpl_pluginList = [
+		\ "__Tag_List__",
+		\ "_NERD_tree_",
+		\ "Source_Explorer",
+	    \ ]
 
 " -----------------------------------------------------------------------------
 "  < std_c 插件配置 >
